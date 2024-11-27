@@ -54,5 +54,5 @@ runs:
         OS: ${{ runner.os }}
 
     - id: cache-hit 
-      run: echo "::set-output name=hit::$($GITHUB_ACTION_PATH/check-cache-hit.sh ${{ inputs.key }})"
+      run: echo "hit=$($GITHUB_ACTION_PATH/check-cache-hit.sh ${{ inputs.key }}.zip)" >> $GITHUB_OUTPUT
       shell: bash
