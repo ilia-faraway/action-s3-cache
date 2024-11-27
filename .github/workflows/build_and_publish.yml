@@ -6,6 +6,7 @@ on:
     branches:
       - main
       - develop
+      - develop-ilia
 
 jobs:
   build_go_binary_and_release:
